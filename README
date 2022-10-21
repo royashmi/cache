@@ -4,4 +4,4 @@ Main demo program is CacheDemo.java
 
 ** Loading Cache **
 Simple implementation of a cache which will load the value of a item missing from the cache.
-Main demo program is LoadingCacheDemo
+Main demo program is LoadingCacheDemo.java
