@@ -3,6 +3,9 @@ package com.personal.miniproject.cachelib;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * A sample program demonstrating the use of the {@link LoadingCache}
+ */
 public class LoadingCacheDemo {
 
   private static Map<String, Integer> MOCK_DATABASE = new HashMap<>();

@@ -1,6 +1,9 @@
 package com.personal.miniproject.cachelib;
 
-public class CacheBuilder<K, V> {
+/**
+ * A class that provides API to build an instance of a {@link LoadingCache}
+ */
+public final class CacheBuilder<K, V> {
 
   private long _maximumSize;
 

@@ -1,9 +1,23 @@
 package com.personal.miniproject.simplecache;
 
+/**
+ * An ADT representing a Doubly LinkedList Node
+ */
 public class DLLNode<E> {
 
+  /**
+   * Next pointer for the node
+   */
   private DLLNode<E> _next;
+
+  /**
+   * Previous pointer for the node
+   */
   private DLLNode<E> _prev;
+
+  /**
+   * Value of the element stored in the node
+   */
   private final E _element;
 
   public DLLNode(E element) {

@@ -4,6 +4,9 @@ import com.personal.miniproject.simplecache.Cache;
 import com.personal.miniproject.simplecache.CacheImpl;
 import com.personal.miniproject.simplecache.LRUEvictionPolicy;
 
+/**
+ * An implementation of a {@link LoadingCache}.
+ */
 public class LoadingCacheImpl<K, V> implements LoadingCache<K, V> {
 
   private final CacheLoader<K, V> _cacheLoader;

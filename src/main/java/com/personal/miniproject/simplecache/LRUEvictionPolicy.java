@@ -3,6 +3,9 @@ package com.personal.miniproject.simplecache;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * An implementation of eviction policy which evicts the least recently accessed item
+ */
 public class LRUEvictionPolicy<K> implements EvictionPolicy<K> {
 
   private final DoublyLinkedList<K> _doublyLinkedList;

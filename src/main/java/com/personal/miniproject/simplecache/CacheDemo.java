@@ -1,5 +1,8 @@
 package com.personal.miniproject.simplecache;
 
+/**
+ * A sample program to demonstrate the use of the cache
+ */
 public class CacheDemo {
 
   public static void main(String[] args) {

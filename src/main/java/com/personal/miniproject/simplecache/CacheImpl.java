@@ -3,12 +3,20 @@ package com.personal.miniproject.simplecache;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * Implementation of the {@link Cache} interface
+ */
 public class CacheImpl<K,V> implements Cache<K,V> {
 
   private final long _capacity;
   private final EvictionPolicy<K> _evictionPolicy;
   private final Map<K, V> _store;
 
+  /**
+   * Constructor for the cache
+   * @param capacity Maximum allowed capacity for the cache
+   * @param evictionPolicy The {@link EvictionPolicy} that should be used for the cache
+   */
   public CacheImpl(long capacity, EvictionPolicy<K> evictionPolicy) {
     _capacity = capacity;
     _evictionPolicy = evictionPolicy;
@@ -40,6 +48,7 @@ public class CacheImpl<K,V> implements Cache<K,V> {
   @Override
   public void del(K key) {
     if (_store.containsKey(key)) {
+      _evictionPolicy.keyDeleted(key);
       _store.remove(key);
     }
   }
